@@ -21,6 +21,7 @@ const useGoogleLogin = ({
   scope,
   accessType,
   responseType,
+  pluginName,
   jsSrc = 'https://apis.google.com/js/api.js',
   prompt
 }) => {
@@ -90,7 +91,8 @@ const useGoogleLogin = ({
           ux_mode: uxMode,
           redirect_uri: redirectUri,
           scope,
-          access_type: accessType
+          access_type: accessType,
+          pluginName: plugin_name
         }
 
         if (responseType === 'code') {
