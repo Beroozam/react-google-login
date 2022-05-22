@@ -36,6 +36,7 @@ const GoogleLogin = props => {
     scope,
     accessType,
     responseType,
+    pluginName,
     jsSrc,
     prompt
   } = props
@@ -59,6 +60,7 @@ const GoogleLogin = props => {
     scope,
     accessType,
     responseType,
+    pluginName,
     jsSrc,
     prompt
   })
@@ -167,6 +169,7 @@ GoogleLogin.propTypes = {
   responseType: PropTypes.string,
   type: PropTypes.string,
   accessType: PropTypes.string,
+  pluginName: PropTypes.string,
   render: PropTypes.func,
   theme: PropTypes.string,
   icon: PropTypes.bool
@@ -188,6 +191,7 @@ GoogleLogin.defaultProps = {
   },
   icon: true,
   theme: 'light',
+  pluginName: 'chat',
   onRequest: () => {}
 }
 

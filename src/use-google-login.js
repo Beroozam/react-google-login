@@ -92,7 +92,7 @@ const useGoogleLogin = ({
           redirect_uri: redirectUri,
           scope,
           access_type: accessType,
-          pluginName: plugin_name
+          plugin_name: pluginName
         }
 
         if (responseType === 'code') {
